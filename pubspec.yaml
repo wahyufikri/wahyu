@@ -38,6 +38,7 @@ dependencies:
   audioplayers: ^0.20.1
   video_player: ^2.8.6
   intl: ^0.18.1
+  google_maps_flutter: ^2.1.1
 
 dev_dependencies:
   flutter_test:
@@ -60,6 +61,12 @@ flutter:
   # included with your application, so that you can use the icons in
   # the material Icons class.
   uses-material-design: true
+
+  assets:
+    - gambar/
+    - gambar/rs1.jpg
+    - gambar/rs2.jpg
+
 
   # To add assets to your application, add an assets section, like this:
   # assets:

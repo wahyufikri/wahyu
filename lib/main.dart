@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:wahyu/latihan30mei/splash_screen.dart';
+import 'package:wahyu/latihan8juni/screen_page/page_provinsi.dart';
 
 import 'latihannotes15juni/screen_page/page_utama.dart';
 
@@ -36,7 +37,7 @@ class MyApp extends StatelessWidget {
         colorScheme: ColorScheme.fromSeed(seedColor: Colors.deepPurple),
         useMaterial3: true,
       ),
-      home: PageUtama(),
+      home: PageBeranda(),
       debugShowCheckedModeBanner: false,
     );
   }
