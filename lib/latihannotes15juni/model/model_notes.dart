@@ -34,24 +34,28 @@ class ModelNotes {
 
 class Datum {
   String id;
-  String judul;
-  String isi;
+  String judulNote;
+  String isiNote;
+  String ket;
 
   Datum({
     required this.id,
-    required this.judul,
-    required this.isi,
+    required this.judulNote,
+    required this.isiNote,
+    required this.ket,
   });
 
   factory Datum.fromJson(Map<String, dynamic> json) => Datum(
     id: json["id"],
-    judul: json["judul"],
-    isi: json["isi"],
+    judulNote: json["judul_note"],
+    isiNote: json["isi_note"],
+    ket: json["ket"],
   );
 
   Map<String, dynamic> toJson() => {
     "id": id,
-    "judul": judul,
-    "isi":isi,
+    "judul_note": judulNote,
+    "isi_note": isiNote,
+    "ket": ket,
   };
 }

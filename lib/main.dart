@@ -1,7 +1,9 @@
 import 'package:flutter/material.dart';
 import 'package:wahyu/latihan30mei/splash_screen.dart';
-import 'package:wahyu/latihannotes15juni/list_notes.dart';
-import 'package:wahyu/screen_page/page_utama.dart';
+
+import 'latihannotes15juni/screen_page/page_utama.dart';
+
+
 
 void main() {
   runApp(const MyApp());
@@ -34,7 +36,7 @@ class MyApp extends StatelessWidget {
         colorScheme: ColorScheme.fromSeed(seedColor: Colors.deepPurple),
         useMaterial3: true,
       ),
-      home: NotesScreen(),
+      home: PageUtama(),
       debugShowCheckedModeBanner: false,
     );
   }
