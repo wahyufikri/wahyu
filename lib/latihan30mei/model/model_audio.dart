@@ -35,31 +35,27 @@ class ModelAudio {
 class Datum {
   String id;
   String judul;
-  String penyanyi;
+  String fileAudio;
   String gambar;
-  String audio;
 
   Datum({
     required this.id,
     required this.judul,
-    required this.penyanyi,
+    required this.fileAudio,
     required this.gambar,
-    required this.audio,
   });
 
   factory Datum.fromJson(Map<String, dynamic> json) => Datum(
     id: json["id"],
     judul: json["judul"],
-    penyanyi: json["penyanyi"],
+    fileAudio: json["file_audio"],
     gambar: json["gambar"],
-    audio: json["audio"],
   );
 
   Map<String, dynamic> toJson() => {
     "id": id,
     "judul": judul,
-    "penyanyi": penyanyi,
+    "file_audio": fileAudio,
     "gambar": gambar,
-    "audio": audio,
   };
 }
